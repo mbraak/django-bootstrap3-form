@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Example 1{% endblock %}
+
+{% block content %}
+    <form id="form" method="POST" class="small-form">
+        {% csrf_token %}
+        <legend>Example 1</legend>
+        {{ form }}
+        <input class="btn btn-primary" type="submit" value="Submit" />
+    </form>
+{% endblock %}

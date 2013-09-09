@@ -1,0 +1,13 @@
+<div class="checkbox">
+    <label>
+        <input
+            type="checkbox"
+            name="{{ name }}"
+            {% if checked %}checked="checked"{% endif %}
+            {% if value %}value="{{ value }}"{% endif %}
+            {% if attrs %}{{ attrs }}{% endif %}
+            {% if autofocus %}autofocus="autofocus"{% endif %}
+        />
+        {{ label }}
+    </label>
+</div>

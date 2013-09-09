@@ -1,0 +1,20 @@
+language: python
+python:
+  - 2.6
+  - 2.7
+  - 3.3
+env:
+  - DJANGO=Django==1.4.8
+  - DJANGO=Django==1.5.4
+  - DJANGO=https://www.djangoproject.com/download/1.6b4/tarball/
+install:
+  - pip install $DJANGO
+  - pip install -r testproject/requirements_test.txt
+  - python setup.py install
+script:
+  - cd testproject
+  - python manage.py test
+matrix:
+  exclude:
+    - python: 3.3
+      env: DJANGO=Django==1.4.8

@@ -1,0 +1,7 @@
+{% if errors %}
+    <div class="formgroup has-error">
+        {% for e in errors %}
+            <p class="help-block">{{ e }}</p>
+        {% endfor %}
+    </div>
+{% endif %}

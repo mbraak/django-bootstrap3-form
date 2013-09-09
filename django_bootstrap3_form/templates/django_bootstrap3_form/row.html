@@ -1,0 +1,18 @@
+<div
+    class="form-group{% if errors %} has-error{% endif %}{% if css_classes %} {{ css_classes }}{% endif %}"
+    id="row-{{ name }}"
+>
+    {% if must_render_label %}
+        <label for="id_{{ name }}">{{ label_title }}</label>
+    {% endif %}
+
+    {{ field }}
+
+    {% for error in errors %}
+        <p class="help-block">{{ error }}</p>
+    {% endfor %}
+
+    {% if help_text %}
+        <p class="help-block">{{ help_text }}</p>
+    {% endif %}
+</div>

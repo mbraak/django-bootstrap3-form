@@ -1,0 +1,16 @@
+<label>{{ label }}</label>
+{% for option in options %}
+    <div class="radio">
+        <label>
+            <input
+                type="radio"
+                value="{{ option.value }}"
+                name="{{ name }}"
+                {% if option.checked %}
+                    checked="checked"
+                {% endif %}
+            />
+            {{ option.title }}
+        </label>
+    </div>
+{% endfor %}

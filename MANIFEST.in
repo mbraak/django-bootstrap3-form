@@ -1,0 +1,4 @@
+include LICENSE.rst
+include README.md
+recursive-include django_bootstrap3_form/static *
+recursive-include django_bootstrap3_form/templates *
