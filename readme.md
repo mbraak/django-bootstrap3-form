@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/mbraak/django-bootstrap3-form.png)](https://travis-ci.org/mbraak/django-bootstrap3-form)
 
+[![Coverage Status](https://coveralls.io/repos/mbraak/django-bootstrap3-form/badge.png)](https://coveralls.io/r/mbraak/django-bootstrap3-form)
+
 **Django-bootstrap3-form** allows you write Django forms that work with Twitter Bootstrap 3.
 
 ```
