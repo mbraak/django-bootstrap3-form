@@ -11,9 +11,12 @@ install:
   - pip install $DJANGO
   - pip install -r testproject/requirements_test.txt
   - python setup.py install
+  - pip install coverage==3.6
 script:
   - cd testproject
   - python manage.py test
+  - coverage run --source=django_bootstrap3_form,testproject manage.py test
+  - coverage report -m
 matrix:
   exclude:
     - python: 3.3
