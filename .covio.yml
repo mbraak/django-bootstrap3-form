@@ -1,0 +1,3 @@
+violations:
+  pep8: pep8 . --exclude='build' --ignore=E501
+  sloccount: sloccount django_bootstrap3_form
