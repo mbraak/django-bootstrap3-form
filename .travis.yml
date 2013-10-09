@@ -17,6 +17,9 @@ script:
   - python manage.py test
   - coverage run --source=django_bootstrap3_form,testproject manage.py test
   - coverage report -m
+after_success:
+  - pip install -r requirements_coveralls.txt
+  - coveralls
 matrix:
   exclude:
     - python: 3.3
