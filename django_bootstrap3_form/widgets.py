@@ -64,6 +64,8 @@ class RadioSelect(TemplatedWidget, forms.RadioSelect):
         selected_value = force_text(selected_value)
 
         def get_option(value, title):
+            value = force_text(value)
+
             return dict(
                 value=value,
                 title=title,
