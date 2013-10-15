@@ -6,6 +6,10 @@
 
 [![Violations](https://coviolations.io/projects/mbraak/django-bootstrap3-form/badge/?)](http://coviolations.io/projects/mbraak/django-bootstrap3-form/)
 
+[![Downloads](https://pypip.in/d/django-bootstrap3-form/badge.png)](https://pypi.python.org/pypi/django-bootstrap3-form/)
+
+[![Version](https://pypip.in/v/django-bootstrap3-form/badge.png)](https://pypi.python.org/pypi/django-bootstrap3-form/)
+
 **Django-bootstrap3-form** allows you write Django forms that work with Twitter Bootstrap 3.
 
 ```
