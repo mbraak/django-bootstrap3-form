@@ -1,5 +1,5 @@
 beautifulsoup4==4.3.2
-cssselect==0.9
+cssselect==0.9.1
 django-webtest==1.7.5
 lxml==3.2.3
 pyquery==1.2.6
