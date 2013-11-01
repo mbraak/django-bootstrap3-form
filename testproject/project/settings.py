@@ -23,4 +23,4 @@ ROOT_URLCONF = 'project.urls'
 
 STATIC_URL = '/static/'
 
-SECRET_KEY = 'dd7289b9fcc24b8089f342be29e3d9bf'
+SECRET_KEY = 'secret'
