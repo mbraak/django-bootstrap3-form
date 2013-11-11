@@ -16,9 +16,6 @@ setup(
         'django_pony_forms==0.3.5',
         'six'
     ],
-    dependency_links=[
-        "https://github.com/mbraak/django_pony_forms/archive/0.3.5.tar.gz#egg=django_pony_forms-0.3.5",
-    ],
     author='Marco Braak',
     author_email='mbraak@ridethepony.nl',
 )
