@@ -11,7 +11,6 @@ install:
   - pip install $DJANGO
   - pip install -r testproject/requirements_test.txt
   - python setup.py install
-  - pip install coverage==3.7
   - sudo apt-get update -qq
   - sudo apt-get install -qq sloccount
 script:
@@ -22,7 +21,6 @@ script:
 after_success:
   - pip install -r requirements_coveralls.txt
   - coveralls
-  - pip install coviolations_app==0.19
   - cd ..
   - covio
 matrix:
