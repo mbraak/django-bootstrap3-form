@@ -10,6 +10,8 @@
 
 [![Version](https://pypip.in/v/django-bootstrap3-form/badge.png)](https://pypi.python.org/pypi/django-bootstrap3-form/)
 
+[![Requirements Status](https://requires.io/github/mbraak/django-bootstrap3-form/requirements.png?branch=master)](https://requires.io/github/mbraak/django-bootstrap3-form/requirements/?branch=master)
+
 **Django-bootstrap3-form** allows you write Django forms that work with Twitter Bootstrap 3.
 
 ```
