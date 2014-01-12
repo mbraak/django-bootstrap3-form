@@ -18,4 +18,13 @@ setup(
     ],
     author='Marco Braak',
     author_email='mbraak@ridethepony.nl',
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Framework :: Django",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.3",
+    ]
 )
