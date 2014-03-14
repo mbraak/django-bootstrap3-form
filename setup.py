@@ -13,7 +13,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'Django',
-        'django_pony_forms==0.3.5',
+        'django_pony_forms',
         'six'
     ],
     author='Marco Braak',
