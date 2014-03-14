@@ -6,7 +6,8 @@ python:
 env:
   - DJANGO=Django==1.4.10
   - DJANGO=Django==1.5.5
-  - DJANGO=Django==1.6.1
+  - DJANGO=Django==1.6.2
+  - DJANGO=https://www.djangoproject.com/download/1.7a2/tarball/
 install:
   - pip install $DJANGO
   - pip install -r testproject/requirements_test.txt
@@ -17,13 +18,13 @@ install:
 script:
   - cd testproject
   - python manage.py test
-  - coverage run --source=django_bootstrap3_form,testproject manage.py test
-  - coverage report -m
 after_success:
   - coveralls
   - cd ..
   - covio
 matrix:
   exclude:
+    - python: 2.6
+      env: DJANGO=https://www.djangoproject.com/download/1.7a2/tarball/
     - python: 3.3
       env: DJANGO=Django==1.4.10
