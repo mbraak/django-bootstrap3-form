@@ -18,7 +18,9 @@ install:
   - sudo apt-get install -qq sloccount
 script:
   - cd testproject
-  - python manage.py test
+  - python manage.py test test_app
+  - coverage run --source=django_bootstrap3_form,test_app manage.py test test_app
+  - coverage report
 after_success:
   - coveralls
   - cd ..
