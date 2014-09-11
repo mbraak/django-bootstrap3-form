@@ -3,5 +3,5 @@ coveralls==0.4.2
 coviolations_app==0.24
 PyGithub==1.25.0
 PyYAML==3.11
-requests==2.4.0
+requests==2.4.1
 sh==1.09
