@@ -18,6 +18,7 @@ setup(
     ],
     author='Marco Braak',
     author_email='mbraak@ridethepony.nl',
+    url='https://github.com/mbraak/django-bootstrap3-form',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Django",
