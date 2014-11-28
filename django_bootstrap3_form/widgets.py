@@ -1,8 +1,14 @@
 from django import forms
 from django.forms import widgets
 from django.utils.encoding import force_text
-from django.forms.util import flatatt
 from django.utils.safestring import mark_safe
+
+try:
+    # >= Django 1.7
+    from django.forms.utils import flatatt
+except ImportError:
+    # <= Django 1.6
+    from django.forms.util import flatatt
 
 from .util import FormControlMixin, TemplatedWidget
 
