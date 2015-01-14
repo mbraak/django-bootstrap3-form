@@ -4,4 +4,4 @@ coviolations_app==0.24
 PyGithub==1.25.2
 PyYAML==3.11
 requests==2.5.1
-sh==1.10
+sh==1.11
