@@ -34,3 +34,10 @@ ROOT_URLCONF = 'project.urls'
 STATIC_URL = '/static/'
 
 SECRET_KEY = 'secret'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True
+    }
+]
