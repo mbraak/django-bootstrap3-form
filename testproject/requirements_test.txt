@@ -1,4 +1,4 @@
-django-pony-forms==0.3.8
+git+https://github.com/mbraak/django_pony_forms.git@0.4.0dev#egg=django_pony_forms
 
 # django-webtest
 git+https://github.com/mbraak/django-webtest.git@1.7.7.1#egg=django-webtest
