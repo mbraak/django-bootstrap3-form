@@ -1,5 +1,6 @@
-from django.template import Context
+import django
 from django.template.loader import get_template
+from django.template.context import Context
 
 
 class FormControlMixin(object):
@@ -39,12 +40,9 @@ class TemplatedWidget(object):
 
     def render(self, name, value, attrs=None, label=None):
         template = self.get_template()
+        context = self.get_context(name, value, attrs, label)
 
-        context = Context(
-            self.get_context(name, value, attrs, label)
-        )
-
-        return template.render(context)
+        return render_template(template, context)
 
     def get_context(self, name, value, attrs, label=None):
         return dict(
@@ -59,3 +57,12 @@ class TemplatedWidget(object):
             self._template = get_template(self.template_name)
 
         return self._template
+
+
+def render_template(template, context_dict):
+    if django.VERSION < (1, 8):
+        return template.render(
+            Context(context_dict)
+        )
+    else:
+        return template.render(context_dict)
