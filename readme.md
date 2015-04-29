@@ -1,6 +1,10 @@
 # Django Bootstrap 3 form
 
-[![Build Status](https://travis-ci.org/mbraak/django-bootstrap3-form.png)](https://travis-ci.org/mbraak/django-bootstrap3-form) [![Coverage Status](https://coveralls.io/repos/mbraak/django-bootstrap3-form/badge.png)](https://coveralls.io/r/mbraak/django-bootstrap3-form) [![Downloads](https://pypip.in/d/django-bootstrap3-form/badge.png)](https://pypi.python.org/pypi/django-bootstrap3-form/) [![Version](https://pypip.in/v/django-bootstrap3-form/badge.png)](https://pypi.python.org/pypi/django-bootstrap3-form/) [![Requirements Status](https://requires.io/github/mbraak/django-bootstrap3-form/requirements.png?branch=master)](https://requires.io/github/mbraak/django-bootstrap3-form/requirements/?branch=master)
+[![Build Status](https://travis-ci.org/mbraak/django-bootstrap3-form.svg?branch=master)](https://travis-ci.org/mbraak/django-bootstrap3-form) [![Version](https://badge.fury.io/py/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/)
+
+[![Coverage Status](https://img.shields.io/coveralls/mbraak/django-bootstrap3-form.svg)](https://coveralls.io/r/mbraak/django-bootstrap3-form?branch=master) [![Downloads](https://img.shields.io/pypi/dm/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/) [![Requirements Status](https://requires.io/github/mbraak/django-bootstrap3-form/requirements.svg?branch=master)](https://requires.io/github/mbraak/django-bootstrap3-form/requirements/?branch=master)
+
+[![License](https://img.shields.io/pypi/l/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/)
 
 **Django-bootstrap3-form** allows you write Django forms that work with Twitter Bootstrap 3.
 
