@@ -2,7 +2,7 @@ git+https://github.com/mbraak/django_pony_forms.git@0.4.0dev#egg=django_pony_for
 
 # django-webtest
 django-webtest==1.7.8
-beautifulsoup4==4.3.2
+beautifulsoup4==4.4.0
 cssselect==0.9.1
 lxml==3.4.4
 pyquery==1.2.9
