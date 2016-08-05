@@ -10,6 +10,8 @@
 
 It supports Django 1.8-1.10.
 
+Note that version 0.3.0 also supports Django 1.7.
+
 ```python
 import django_bootstrap3_form
 
