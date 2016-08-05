@@ -1,5 +1,4 @@
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 
 DATABASES = dict(
     default=dict(
@@ -36,8 +35,9 @@ STATIC_URL = '/static/'
 SECRET_KEY = 'secret'
 
 TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'APP_DIRS': True
-    }
+    dict(
+        BACKEND='django.template.backends.django.DjangoTemplates',
+        APP_DIRS=True,
+        OPTIONS=dict(debug=DEBUG)
+    )
 ]
