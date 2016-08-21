@@ -41,3 +41,5 @@ TEMPLATES = [
         OPTIONS=dict(debug=DEBUG)
     )
 ]
+
+ALLOWED_HOSTS = ['*']
