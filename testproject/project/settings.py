@@ -40,7 +40,7 @@ ROOT_URLCONF = 'project.urls'
 
 STATIC_URL = '/static/'
 
-SECRET_KEY = 'secret'
+SECRET_KEY = 'test_key'
 
 TEMPLATES = [
     dict(
