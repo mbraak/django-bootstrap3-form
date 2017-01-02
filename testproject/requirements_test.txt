@@ -2,7 +2,7 @@ django_pony_forms==0.4.0
 
 # django-webtest
 django-webtest==1.8.0
-beautifulsoup4==4.5.1
+beautifulsoup4==4.5.3
 cssselect==1.0.0
 lxml==3.7.1
 pyquery==1.2.17
