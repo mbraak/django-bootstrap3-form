@@ -1,4 +1,3 @@
-import django
 from django.template.loader import get_template
 from django.template.context import Context
 
@@ -42,7 +41,7 @@ class TemplatedWidget(object):
         template = self.get_template()
         context = self.get_context(name, value, attrs, label)
 
-        return render_template(template, context)
+        return template.render(context)
 
     def get_context(self, name, value, attrs, label=None):
         return dict(
@@ -57,12 +56,3 @@ class TemplatedWidget(object):
             self._template = get_template(self.template_name)
 
         return self._template
-
-
-def render_template(template, context_dict):
-    if django.VERSION < (1, 8):
-        return template.render(
-            Context(context_dict)
-        )
-    else:
-        return template.render(context_dict)
