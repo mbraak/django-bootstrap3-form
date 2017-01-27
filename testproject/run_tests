@@ -1,1 +1,1 @@
-python manage.py test test_app
+PYTHONWARNINGS=default python manage.py test test_app
