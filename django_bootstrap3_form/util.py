@@ -1,18 +1,32 @@
+import django
 from django.template.loader import get_template
 
 
 class FormControlMixin(object):
     css_class = 'form-control'
 
-    def render(self, name, value, attrs=None):
-        attrs = attrs or dict()
+    if django.VERSION[0:2] >= (1, 11):
+        def render(self, name, value, attrs=None, renderer=None):
+            return super(FormControlMixin, self).render(name, value, self._get_attrs(attrs), renderer)
+    else:
+        def render(self, name, value, attrs=None):
+            return super(FormControlMixin, self).render(name, value, self._get_attrs(attrs))
+
+    def _get_attrs(self, attrs_param):
+        def get_param():
+            if attrs_param:
+                return dict(attrs_param)
+            else:
+                return dict()
+
+        attrs = get_param()
 
         class_string = self._get_class_string(attrs)
 
         if class_string:
             attrs['class'] = class_string
 
-        return super(FormControlMixin, self).render(name, value, attrs)
+        return attrs
 
     def _get_class_string(self, attrs):
         classes = []
