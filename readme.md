@@ -19,5 +19,3 @@ class ExampleForm(django_bootstrap3_form.BootstrapForm):
 	username = django_bootstrap3_form.CharField()
 	password = django_bootstrap3_form.CharField(widget=django_bootstrap3_form.PasswordInput)
 ```
-
-[![Code Issues](https://www.quantifiedcode.com/api/v1/project/0f951eae2c1144989a444aa9d237fc0c/badge.svg)](https://www.quantifiedcode.com/app/project/0f951eae2c1144989a444aa9d237fc0c)
