@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/mbraak/django-bootstrap3-form.svg?branch=master)](https://travis-ci.org/mbraak/django-bootstrap3-form) [![Version](https://badge.fury.io/py/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/)
 
-[![Coverage Status](https://img.shields.io/coveralls/mbraak/django-bootstrap3-form.svg)](https://coveralls.io/r/mbraak/django-bootstrap3-form?branch=master) [![Downloads](https://img.shields.io/pypi/dm/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/) [![Requirements Status](https://requires.io/github/mbraak/django-bootstrap3-form/requirements.svg?branch=master)](https://requires.io/github/mbraak/django-bootstrap3-form/requirements/?branch=master)
+[![Coverage Status](https://img.shields.io/coveralls/mbraak/django-bootstrap3-form.svg)](https://coveralls.io/r/mbraak/django-bootstrap3-form?branch=master)
+[![Requirements Status](https://requires.io/github/mbraak/django-bootstrap3-form/requirements.svg?branch=master)](https://requires.io/github/mbraak/django-bootstrap3-form/requirements/?branch=master)
 
 [![License](https://img.shields.io/pypi/l/django-bootstrap3-form.svg)](https://pypi.python.org/pypi/django-bootstrap3-form/)
 
@@ -19,5 +20,3 @@ class ExampleForm(django_bootstrap3_form.BootstrapForm):
 	username = django_bootstrap3_form.CharField()
 	password = django_bootstrap3_form.CharField(widget=django_bootstrap3_form.PasswordInput)
 ```
-
-[![Code Issues](https://www.quantifiedcode.com/api/v1/project/0f951eae2c1144989a444aa9d237fc0c/badge.svg)](https://www.quantifiedcode.com/app/project/0f951eae2c1144989a444aa9d237fc0c)
