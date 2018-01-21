@@ -1,16 +1,11 @@
-import django
 from django.template.loader import get_template
 
 
 class FormControlMixin(object):
     css_class = 'form-control'
 
-    if django.VERSION[0:2] >= (1, 11):
-        def render(self, name, value, attrs=None, renderer=None):
-            return super(FormControlMixin, self).render(name, value, self._get_attrs(attrs), renderer)
-    else:
-        def render(self, name, value, attrs=None):
-            return super(FormControlMixin, self).render(name, value, self._get_attrs(attrs))
+    def render(self, name, value, attrs=None, renderer=None):
+        return super(FormControlMixin, self).render(name, value, self._get_attrs(attrs), renderer)
 
     def _get_attrs(self, attrs_param):
         def get_param():
