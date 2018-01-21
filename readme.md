@@ -9,9 +9,9 @@
 
 **Django-bootstrap3-form** allows you write Django forms that work with Twitter Bootstrap 3.
 
-It supports Django 1.8 - 2.0. Also tested with Python 2.7, 3.4 - 3.6.
+It supports Django 1.11 - 2.0. Also tested with Python 2.7, 3.5 - 3.6.
 
-Note that version 0.3.0 also supports Django 1.7.
+Note that version 0.5.0 also supports Django 1.8 - 1.10.
 
 ```python
 import django_bootstrap3_form
