@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 
-version = '0.5.0'
+version = '0.6.0'
 
 setup(
     name='django-bootstrap3-form',
@@ -24,10 +24,9 @@ setup(
         "Framework :: Django",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6"
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7"
     ]
 )
