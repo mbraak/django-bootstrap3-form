@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import widgets
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.safestring import mark_safe
 from django.forms.utils import flatatt
 
@@ -18,7 +18,7 @@ class CheckboxInput(TemplatedWidget, forms.CheckboxInput):
         context['label'] = label
 
         if not (value is True or value is False or value is None or value == ''):
-            context['value'] = force_text(value)
+            context['value'] = force_str(value)
 
         if attrs:
             context['attrs'] = mark_safe(flatatt(attrs))
@@ -53,7 +53,7 @@ class RadioSelect(TemplatedWidget, forms.RadioSelect):
             value = ''
 
         context.update(
-            selected_value=force_text(value),
+            selected_value=force_str(value),
             attrs=self.build_attrs(attrs),
             options=self.get_options(value),
         )
@@ -61,10 +61,10 @@ class RadioSelect(TemplatedWidget, forms.RadioSelect):
         return context
 
     def get_options(self, selected_value):
-        selected_value = force_text(selected_value)
+        selected_value = force_str(selected_value)
 
         def get_option(value, title):
-            value = force_text(value)
+            value = force_str(value)
 
             return dict(
                 value=value,
