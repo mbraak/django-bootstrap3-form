@@ -1,7 +1,7 @@
 django-pony-forms==1.0.0
 
 # django-webtest
-django-webtest==1.9.7
+https://github.com/mbraak/django-webtest/archive/django3.zip
 beautifulsoup4==4.8.1
 cssselect==1.1.0
 lxml==4.4.2
