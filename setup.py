@@ -21,8 +21,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'Django',
-        'django_pony_forms',
-        'six'
+        'django_pony_forms'
     ],
     author='Marco Braak',
     author_email='mbraak@ridethepony.nl',
