@@ -11,6 +11,8 @@ choices = (
 
 
 class ExampleForm(django_bootstrap3_form.BootstrapForm):
+    prefix = 'example'
+
     username = django_bootstrap3_form.CharField(placeholder='Enter username')
     password = django_bootstrap3_form.CharField(widget=django_bootstrap3_form.PasswordInput, placeholder='Enter password')
     choice = django_bootstrap3_form.BooleanField(required=False)
