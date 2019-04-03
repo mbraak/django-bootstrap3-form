@@ -1,4 +1,4 @@
-https://github.com/mbraak/django_pony_forms/archive/master.zip
+django_pony_forms==0.7.1
 
 # django-webtest
 django-webtest==1.9.4
