@@ -1,4 +1,4 @@
-django_pony_forms==0.7.1
+django-pony-forms==1.0.0
 
 # django-webtest
 django-webtest==1.9.7
