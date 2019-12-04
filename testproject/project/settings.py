@@ -1,6 +1,3 @@
-import django
-
-
 DEBUG = True
 
 DATABASES = dict(
@@ -31,9 +28,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
-
-if django.VERSION[0:2] < (2, 0):
-    MIDDLEWARE.append('django.contrib.auth.middleware.SessionAuthenticationMiddleware')
 
 ROOT_URLCONF = 'project.urls'
 
