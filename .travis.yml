@@ -7,7 +7,7 @@ matrix:
     - python: 3.8
       env: DJANGO="Django==3.0.7"
     - python: 3.8
-      env: DJANGO="Django==3.1a1"
+      env: DJANGO="Django==3.1b1"
 install:
   - pip install $DJANGO
   - pip install -U -r testproject/requirements_test.txt
