@@ -1,6 +1,6 @@
 {
     "name": "django-bootstrap3-form",
     "dependencies": {
-        "bootstrap": "3.3.7"
+        "bootstrap": "3.4.0"
     }
 }
